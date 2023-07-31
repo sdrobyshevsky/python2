@@ -9,3 +9,4 @@ n = int(input('Введите количество элементов арифм
 for i in range(n):
     if i < n:
         print(a1 + i * d, end =' ')
+        
