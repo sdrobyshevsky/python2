@@ -7,5 +7,5 @@ d = int(input('Введите разность\n'))
 n = int(input('Введите количество элементов арифметической прогрессии\n')) 
 
 for i in range(n):
-    i < n 
-    print(a1 + i * d, end =' ')
+    if i < n:
+        print(a1 + i * d, end =' ')
