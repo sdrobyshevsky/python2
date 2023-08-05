@@ -8,17 +8,28 @@
 # **Ввод:** пара-ра-рам рам-пам-папам па-ра-па-да    
 #     **Вывод:** Парам пам-пам  
 
-song = input('пара-ра-рам рам-пам-папам па-ра-па-да')
-volwes = ['а', 'о', 'э', 'е', 'и', 'ы', 'у', 'ё', 'ю', 'я']
-parts = song.split()
-itog = list()
-for item in parts:
-    k = 0
-    for letter in item:
-        if letter in volwes:
-            k += 1
-    itog.append(k)
-if len(set(itog)) == 1:
+# song = input('пара-ра-рам рам-пам-папам па-ра-па-да')
+# volwes = ['а', 'о', 'э', 'е', 'и', 'ы', 'у', 'ё', 'ю', 'я']
+# parts = song.split()
+# itog = list()
+# for item in parts:
+#     k = 0
+#     for letter in item:
+#         if letter in volwes:
+#             k += 1
+#     itog.append(k)
+# if len(set(itog)) == 1:
+#     print('Парам пам-пам')
+# else:
+#     print('Пам парам')
+    
+text = input('пара-ра-рам рам-пам-папам па-ра-па-да').split()
+                                                       
+f = lambda x: sum(1 for i in x if i in 'аеёиоуыэюя')        
+                                                   
+t = f(text[0]) 
+
+if all([f(i) == t for i in text]):
     print('Парам пам-пам')
 else:
     print('Пам парам')
