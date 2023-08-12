@@ -89,7 +89,7 @@ def main():
         else:
             my_choice = 0
 
-    print("До свидания")
+    print("Выход")
 
 if __name__ == "__main__":
     main()
